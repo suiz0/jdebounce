@@ -1,2 +1,2 @@
 # jdebounce
-Debounce implementation for JQuery
+Debounce implementation for jQuery. The **debounce** mechanism is a feature that keeps a method from running too many times.
