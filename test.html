@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="jdebounce.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var debounced;
+            function hello() {
+                console.log('Hello');
+            }
+
+            debounced = jQuery.debounce(hello, 3000); // wait for 3 second
+
+        </script>
+	</head>
+	<body>
+        <p>Click repeatedly the button below before the 3 seconds are meet</p>
+        <input type="button" value="Click me" onclick="debounced();" />
+	</body>
+</html>
